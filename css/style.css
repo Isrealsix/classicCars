@@ -1,0 +1,18 @@
+:root {
+  --color-silver: #ccc; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none; }
+
+body {
+  background-color: var(--color-silver); }
+
+html {
+  font-family: 'Special Elite', cursive;
+  font-size: 62.5%;
+  font-weight: 400; }
