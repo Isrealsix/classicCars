@@ -1,0 +1,17 @@
+section {
+    width: 98vw;
+    height: 100vh;
+    background-color: #efefef;
+    position: relative;
+    left: 0;
+    margin-bottom: 3rem;
+    transform-origin: left;
+    box-shadow: .5rem .5rem 1rem #aaa;
+    transition: left .5s, transform .5s;
+
+    &.change {
+        left: 15vw;
+        transform: rotateY(10deg);
+        
+    }
+}
