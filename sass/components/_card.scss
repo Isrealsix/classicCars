@@ -1,0 +1,59 @@
+.card {
+	&__box {
+		width: 60rem;
+		margin: 0 3rem;
+		padding: 1rem;
+		background-color: var(--color-white);
+		box-shadow: 0.6rem 0.6rem 0.6rem #bbb;
+		position: relative;
+		transition: all 0.5s;
+
+		&:hover {
+			box-shadow: 0.8rem 0.8rem 0.8rem #bbb;
+			transform: scale(1.1);
+		}
+	}
+
+	&__name {
+		font-size: 2rem;
+		font-weight: 600;
+		color: var(--color-white);
+		text-transform: uppercase;
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		z-index: 10;
+	}
+
+	&__image {
+		width: 100%;
+		opacity: 0.8;
+		transition: opacity 0.5s;
+	}
+
+	&__box:hover &__image {
+		opacity: 1;
+	}
+
+	&__price {
+		font-size: 1.8rem;
+		color: #777;
+		margin: 0.5rem 0;
+	}
+
+	&__button {
+		width: 100%;
+		font-size: 1.7rem;
+		background-color: var(--color-white);
+		letter-spacing: 0.3rem;
+		text-transform: uppercase;
+		border: none;
+		padding: 0.5rem;
+		margin-top: 1rem;
+		background-color: #fff;
+		color: #fff;
+		text-shadow: 0.1rem 0.1rem 0.3rem #000;
+		box-shadow: 0.1rem 0.1rem 0.5rem #bbb;
+		cursor: pointer;
+	}
+}

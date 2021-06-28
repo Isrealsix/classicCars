@@ -104,6 +104,56 @@ section {
     left: 15vw;
     transform: rotateY(10deg); }
 
+.card__box {
+  width: 60rem;
+  margin: 0 3rem;
+  padding: 1rem;
+  background-color: var(--color-white);
+  box-shadow: 0.6rem 0.6rem 0.6rem #bbb;
+  position: relative;
+  transition: all 0.5s; }
+  .card__box:hover {
+    box-shadow: 0.8rem 0.8rem 0.8rem #bbb;
+    transform: scale(1.1); }
+
+.card__name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-white);
+  text-transform: uppercase;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10; }
+
+.card__image {
+  width: 100%;
+  opacity: 0.8;
+  transition: opacity 0.5s; }
+
+.card__box:hover .card__image {
+  opacity: 1; }
+
+.card__price {
+  font-size: 1.8rem;
+  color: #777;
+  margin: 0.5rem 0; }
+
+.card__button {
+  width: 100%;
+  font-size: 1.7rem;
+  background-color: var(--color-white);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.3rem #000;
+  box-shadow: 0.1rem 0.1rem 0.5rem #bbb;
+  cursor: pointer; }
+
 .section-1 {
   flex-direction: column;
   background: url("../images/bg-section1.jpg") center no-repeat;
@@ -114,3 +164,8 @@ section {
     text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222; }
   .section-1__image {
     width: 70%; }
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
