@@ -1,0 +1,15 @@
+.section-1 {
+	flex-direction: column;
+	background: url('../images/bg-section1.jpg') center no-repeat;
+	background-size: cover;
+
+	&__heading {
+		margin-bottom: 3rem;
+		text-transform: uppercase;
+		text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
+	}
+
+	&__image {
+		width: 70%;
+	}
+}

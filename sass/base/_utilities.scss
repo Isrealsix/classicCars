@@ -1,0 +1,15 @@
+.section-heading {
+	font-size: 10rem;
+	font-weight: bolder;
+	color: var(--color-white);
+	margin-bottom: 10rem;
+	text-align: center;
+	letter-spacing: 1rem;
+	text-shadow: 0.3rem 0.3rem 0.5rem #555;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
