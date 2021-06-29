@@ -7,15 +7,36 @@
 	left: -15vw;
 	padding: 4rem 0 0 4rem;
 	z-index: 12;
-	transition: left .5s;
+	transition: left 0.5s;
+
+	@include respond(laptop) {
+		width: 20vw;
+		padding: 2rem 0 0 2rem;
+		left: -20vw;
+	}
+
+	@include respond(tablet) {
+		width: 25vw;
+		left: -25vw;
+	}
+
+	@include respond(phone-land) {
+		width: 30vw;
+		left: -30vw;
+	}
+
+	@include respond(phone-port) {
+		width: 40vw;
+		left: -40vw;
+	}
 
 	&__link {
 		font-size: 1.5rem;
 		font-weight: 600;
 		color: #777;
-		letter-spacing: .3rem;
+		letter-spacing: 0.3rem;
 		text-transform: uppercase;
-		transition: color .3s;
+		transition: color 0.3s;
 
 		&:hover {
 			color: #111;

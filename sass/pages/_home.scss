@@ -4,14 +4,34 @@
 	background: url('../images/bg-section1.jpg') center no-repeat;
 	background-size: cover;
 
+	@include respond(laptop) {
+		justify-content: space-evenly;
+	}
+
 	&__heading {
 		margin-bottom: 3rem;
 		text-transform: uppercase;
 		text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
+
+		@include respond(laptop) {
+			font-size: 7rem;
+		}
+
+		@include respond(phone-port) {
+			font-size: 4.5rem;
+		}
 	}
 
 	&__image {
 		width: 70%;
+
+		@include respond(tablet) {
+			width: 90%;
+		}
+
+		@include respond(phone-port) {
+			width: 100%;
+		}
 	}
 }
 
@@ -20,6 +40,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+
+	@include respond(laptop) {
+		height: auto;
+		padding: 5rem 0 10rem 0;
+	}
 }
 
 // Section 3
@@ -28,6 +53,11 @@
 	flex-direction: column;
 	justify-content: space-around;
 	background-color: #222;
+	margin: 5rem 0;
+
+	@include respond(tablet) {
+		height: auto;
+	}
 }
 
 // Section 4
@@ -35,6 +65,14 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	@include respond(laptop) {
+		height: auto;
+	}
+
+	@include respond(phone-land) {
+		padding: 6rem 0 1rem 0;
+	}
 }
 
 // Section 5
@@ -48,6 +86,10 @@
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 0;
+
+	@include respond(laptop) {
+		height: auto;
+	}
 }
 
 .copyright {
@@ -55,4 +97,11 @@
 	font-weight: 300;
 	color: var(--color-white);
 	text-align: center;
+
+	@include respond(laptop) {
+		margin-top: 5rem;
+	}
+	@include respond(iphone) {
+		width: 80%;
+	}
 }

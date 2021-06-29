@@ -30,5 +30,21 @@
 	&.change {
 		left: 15vw;
 		transform: rotate(45deg);
+
+		@include respond(laptop) {
+			left: 20vw;
+		}
+
+		@include respond(tablet) {
+			left: 25vw;
+		}
+
+		@include respond(phone-land) {
+			left: 30vw;
+		}
+
+		@include respond(phone-port) {
+			left: 40vw;
+		}
 	}
 }

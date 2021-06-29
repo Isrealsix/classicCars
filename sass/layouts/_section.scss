@@ -10,8 +10,32 @@ section {
 	transition: left 0.5s, transform 0.5s;
 	padding: 5rem 0;
 
+	@include respond(tablet) {
+		width: 100vw;
+	}
+
 	&.change {
 		left: 15vw;
 		transform: rotateY(10deg);
+
+		@include respond(laptop) {
+			left: 20vw;
+			transform: rotateY(15deg);
+		}
+
+		@include respond(tablet) {
+			left: 25vw;
+			transform: rotateY(20deg);
+		}
+
+		@include respond(phone-land) {
+			left: 30vw;
+			transform: rotateY(25deg);
+		}
+
+		@include respond(phone-port) {
+			left: 0;
+			transform: rotateY(0);
+		}
 	}
 }

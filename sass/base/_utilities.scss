@@ -6,6 +6,14 @@
 	text-align: center;
 	letter-spacing: 1rem;
 	text-shadow: 0.3rem 0.3rem 0.5rem #555;
+
+	@include respond(phone-land) {
+		font-size: 5.5rem;
+	}
+
+	@include respond(phone-port) {
+		font-size: 4.5rem;
+	}
 }
 
 .center {
